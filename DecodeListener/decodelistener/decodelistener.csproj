@@ -42,7 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="datalogic-xamarin-sdk, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\datalogic-xamarin-sdk.1.0.60-beta\lib\monoandroid403\datalogic-xamarin-sdk.dll</HintPath>
+      <HintPath>..\packages\datalogic-xamarin-sdk.1.0.61-beta\lib\monoandroid403\datalogic-xamarin-sdk.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Mono.Android" />

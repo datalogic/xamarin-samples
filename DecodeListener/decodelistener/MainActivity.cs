@@ -17,6 +17,7 @@ namespace decodelistener
 
         BarcodeManager decoder = null;
         TextView mBarcodeText;
+        TextView mSymbology;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -27,6 +28,7 @@ namespace decodelistener
 
             // Retrieve the TextView from the displayed layout.
             mBarcodeText = FindViewById<TextView>(Resource.Id.editText1);
+            mSymbology = FindViewById<TextView>(Resource.Id.textSymbology);
         }
 
         protected override void OnResume()
@@ -81,6 +83,7 @@ namespace decodelistener
         {
             // Change the displayed text to the current received result.
             mBarcodeText.Text = decodeResult.Text;
+            mSymbology.Text = decodeResult.BarcodeID.ToString();
         }
     }
 }
