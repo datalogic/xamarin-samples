@@ -1,0 +1,6 @@
+packages
+.vs
+DeviceSampleAPI/DeviceSample.csproj.user
+**/bin
+**/obj
+
