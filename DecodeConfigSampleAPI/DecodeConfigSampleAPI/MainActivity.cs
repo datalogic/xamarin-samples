@@ -41,7 +41,6 @@ namespace DecodeConfigSampleAPI
 
             // Now we can change some Scanner/Device configuration parameters.
             // These values are not applied, as long as store method is not called.
-            // TODO Xamarin HAS to be able to atleast accept Set(true) here.
             configuration.Code39.Enable.Set(true);
             configuration.Code39.EnableChecksum.Set(true);
             configuration.Code39.FullAscii.Set(true);
@@ -63,7 +62,6 @@ namespace DecodeConfigSampleAPI
             }
 
             // Change IntentWedge action and category to specific ones.
-            // TODO should we reference Java lib here or Xamarin wrappers?
             configuration.IntentWedge.Action.Set("com.datalogic.examples.decode_action");
             configuration.IntentWedge.Category.Set("com.datalogic.examples.decode_category");
 
