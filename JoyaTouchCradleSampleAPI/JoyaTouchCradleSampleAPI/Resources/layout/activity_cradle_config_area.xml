@@ -38,8 +38,7 @@
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="1"
 	    	style="?android:attr/buttonBarButtonStyle"
-	    	android:text="@string/read"
-	    	android:onClick="readConfig" />
+	    	android:text="@string/read" />
 	    
 	    <Button
 	    	android:id="@+id/buttonWriteConfig"
@@ -47,8 +46,7 @@
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="1"
 	    	style="?android:attr/buttonBarButtonStyle"
-	    	android:text="@string/write"
-	    	android:onClick="writeConfig" />
+	    	android:text="@string/write" />
 	    
 	</LinearLayout>
 

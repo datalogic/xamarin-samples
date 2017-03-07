@@ -26,10 +26,10 @@ namespace JoyaTouchCradleSampleAPI
         private static Type[] ACT_CLASSES =
         {
             typeof(GetCradleStateActivity),
-            //typeof(ControlCradleLEDActivity),
-            //typeof(ControlCradleLockActivity),
-            //typeof(CradleConfigAreaActivity),
-            //typeof(CradleCustomAreaActivity),
+            typeof(ControlCradleLEDActivity),
+            typeof(ControlCradleLockActivity),
+            typeof(CradleConfigAreaActivity),
+            typeof(CradleCustomAreaActivity),
             null
         };
 
@@ -47,7 +47,7 @@ namespace JoyaTouchCradleSampleAPI
             {
                 JoyaTouchCradleApplication application = (JoyaTouchCradleApplication)ApplicationContext;
                 ICradleJoyaTouch jtCradle = application.CradleJoyaTouch;
-                if (jtCradle.IsDeviceInCradle)
+                //if (jtCradle.IsDeviceInCradle)
                 {
                     // Execute the reset without calling any activity
                     if (ACT_NAMES[e.Position].Equals("Reset"))
@@ -60,11 +60,11 @@ namespace JoyaTouchCradleSampleAPI
                         StartActivity(intent);
                     }
                 }
-                else
-                {
-                    Toast.MakeText(this, "Device is not in Cradle. Retry after insertion.",
-                            ToastLength.Long).Show();
-                }
+                //else
+                //{
+                //    Toast.MakeText(this, "Device is not in Cradle. Retry after insertion.",
+                //            ToastLength.Long).Show();
+                //}
             };
 
 

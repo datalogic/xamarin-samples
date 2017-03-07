@@ -32,8 +32,7 @@
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="1"
 	    	style="?android:attr/buttonBarButtonStyle"
-	    	android:text="@string/read"
-	    	android:onClick="readCustom" />
+	    	android:text="@string/read" />
 	    
 	    <Button 
 	    	android:id="@+id/buttonClearCustom"
@@ -41,8 +40,7 @@
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="1"
 	    	style="?android:attr/buttonBarButtonStyle"
-	    	android:text="@string/clear"
-	    	android:onClick="clearCustom" />
+	    	android:text="@string/clear" />
 	    
 	    <Button
 	    	android:id="@+id/buttonWriteCustom"
@@ -50,8 +48,7 @@
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="1"
 	    	style="?android:attr/buttonBarButtonStyle"
-	    	android:text="@string/write"
-	    	android:onClick="writeCustom" />
+	    	android:text="@string/write" />
 	    
 	</LinearLayout>
 
