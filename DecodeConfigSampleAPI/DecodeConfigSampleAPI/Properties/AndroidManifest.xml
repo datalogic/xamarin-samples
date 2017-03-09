@@ -5,7 +5,4 @@
     android:label="DecodeConfigSampleAPI"
     android:theme="@android:style/Theme.Holo.Light" >
   </application>
-  <uses-library
-        android:name="com.datalogic.device"
-        android:required="true" />
 </manifest>

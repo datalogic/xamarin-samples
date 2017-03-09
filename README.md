@@ -11,3 +11,6 @@ Configure barcode scanner properties
 Access common info and control the device.
 
 Currently, this only includes Battery, Location and NFC information.
+
+## JoyaTouchCradleSampleAPI
+Configure and control the JoyaTouch cradle.

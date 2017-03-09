@@ -32,18 +32,26 @@ namespace DeviceSampleAPI
             btnNfc = (Button)FindViewById(Resource.Id.btnNfc);
             btnNfc.Click += delegate
             {
-                newVal = !IsNfcEnabled();
-                SetEnableNfc(newVal);
-                try
+                Android.Nfc.NfcManager manager = (Android.Nfc.NfcManager)GetSystemService(Context.NfcService);
+                if (manager == null)
                 {
-                    Thread.Sleep(500);
+                    nfcStatus.Text = "Nfc is not supported on this device.";
                 }
-                catch (ThreadInterruptedException e)
+                else
                 {
-                    Log.Error("Thread exception", e.StackTrace);
+                    newVal = !IsNfcEnabled();
+                    SetEnableNfc(newVal);
+                    try
+                    {
+                        Thread.Sleep(500);
+                    }
+                    catch (ThreadInterruptedException e)
+                    {
+                        Log.Error("Thread exception", e.StackTrace);
+                    }
+                    newVal = IsNfcEnabled();
+                    nfcStatus.Text = "Nfc is " + (newVal ? "" : "not ") + "enabled";
                 }
-                newVal = IsNfcEnabled();
-                nfcStatus.Text = "Nfc is " + (newVal ? "" : "not ") + "enabled";
             };
 
             btnNFCSettings = (Button)FindViewById(Resource.Id.btnNFCSettings);
@@ -60,9 +68,14 @@ namespace DeviceSampleAPI
         public bool IsNfcEnabled()
         {
             Android.Nfc.NfcManager manager = (Android.Nfc.NfcManager)GetSystemService(Context.NfcService);
-            NfcAdapter adapter = manager.DefaultAdapter;
-            if (adapter != null && adapter.IsEnabled)
-                return true;
+            if (manager != null)
+            {
+                NfcAdapter adapter = manager.DefaultAdapter;
+                if (adapter != null && adapter.IsEnabled)
+                    return true;
+            }
+
+            // default is to return false. NFC is either not supported at all, or not enabled.
             return false;
         }
 

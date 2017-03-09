@@ -1,6 +1,5 @@
 packages
 .vs
-DeviceSampleAPI/DeviceSample.csproj.user
+**/*.user
 **/bin
 **/obj
-
