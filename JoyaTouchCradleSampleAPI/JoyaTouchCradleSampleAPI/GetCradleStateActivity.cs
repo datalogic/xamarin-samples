@@ -45,7 +45,7 @@ namespace JoyaTouchCradleSampleAPI
         public void updateContent()
         {
             bool inCradle = jtCradle.IsDeviceInCradle;
-            //if (inCradle)
+            if (inCradle)
             {
                 StateInfo state = new StateInfo();
                 if (jtCradle.GetCradleState(state))
@@ -68,12 +68,12 @@ namespace JoyaTouchCradleSampleAPI
                     textState.Text = "";
                 }
             }
-            //else
-            //{
-            //    textDeviceInCradle.SetTextColor(Color.Red);
-            //    textDeviceInCradle.SetText(Resource.String.device_not_in_cradle);
-            //    textState.Text = "";
-            //}
+            else
+            {
+                textDeviceInCradle.SetTextColor(Color.Red);
+                textDeviceInCradle.SetText(Resource.String.device_not_in_cradle);
+                textState.Text = "";
+            }
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

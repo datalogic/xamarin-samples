@@ -28,3 +28,6 @@ using Android.App;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+
+// Use the Datalogic scanning library present on the device.
+[assembly: UsesLibrary("com.datalogic.device", true)]

@@ -29,4 +29,4 @@ using Android.App;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-//[assembly: UsesLibrary("com.datalogic.extension.selfshopping", true)]
+[assembly: UsesLibrary("com.datalogic.extension.selfshopping", true)]
