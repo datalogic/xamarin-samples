@@ -11,11 +11,12 @@ using Com.Datalogic.Decode.Configuration;
 namespace decodelistener
 {
     [Activity(Label = "DecodeListener", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity, IReadListener
+    public class MainActivity : Activity
     {
         private readonly string LOGTAG = typeof(MainActivity).Name;
 
         BarcodeManager decoder = null;
+		MyReadListener readListener = new MyReadListener();
         TextView mBarcodeText;
         TextView mSymbology;
 
@@ -50,7 +51,7 @@ namespace decodelistener
             try
             {
                 // add our class as a listener
-                decoder.AddReadListener(this);
+                decoder.AddReadListener(readListener);
             }
             catch (DecodeException e)
             {
@@ -70,7 +71,7 @@ namespace decodelistener
                 try
                 {
                     // Unregister our listener from it and free resources
-                    decoder.RemoveReadListener(this);
+                    decoder.RemoveReadListener(readListener);
                 }
                 catch (Exception e)
                 {
@@ -79,12 +80,7 @@ namespace decodelistener
             }
         }
 
-        void IReadListener.OnRead(IDecodeResult decodeResult)
-        {
-            // Change the displayed text to the current received result.
-            mBarcodeText.Text = decodeResult.Text;
-            mSymbology.Text = decodeResult.BarcodeID.ToString();
-        }
+
     }
 }
 
