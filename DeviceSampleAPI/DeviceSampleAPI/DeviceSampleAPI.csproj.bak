@@ -17,7 +17,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -56,11 +56,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InfoActivity.cs" />
-    <Compile Include="ResetActivity.cs" />
-    <Compile Include="SleepActivity.cs" />
-    <Compile Include="TouchActivity.cs" />
-    <Compile Include="NotificationActivity.cs" />
     <Compile Include="BatteryActivity.cs" />
     <Compile Include="DeviceSampleAPI.cs" />
     <Compile Include="LocationActivity.cs" />
@@ -128,9 +123,6 @@
     <Folder Include="Resources\raw\" />
     <Folder Include="Resources\values-sw600dp\" />
     <Folder Include="Resources\values-sw720dp-land\" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_launcher.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
