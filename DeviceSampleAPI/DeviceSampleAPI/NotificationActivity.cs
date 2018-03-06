@@ -15,7 +15,7 @@ namespace DeviceSampleAPI
         private LedManager led;
         private Button btnLed;
         private Button btnLedEnable;
-        private Boolean enable = true;
+        private Boolean enable = false;
         
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -80,5 +80,24 @@ namespace DeviceSampleAPI
             }
 
         }
+        protected override void OnPause()
+        {
+            base.OnPause();
+            enable = false;
+            TurnOnGreenSpotLed();
+        }
+        protected override void OnStop()
+        {
+            base.OnStop();
+            enable = false;
+            TurnOnGreenSpotLed();
+        }
+        protected override void OnDestroy()
+        {
+            base.OnDestroy();
+            enable = false;
+            TurnOnGreenSpotLed();
+        }
+
     }
 }
