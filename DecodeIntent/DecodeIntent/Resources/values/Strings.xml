@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, Click Me!</string>
+
+  <string name="intent_wedge_sample">IntentWedgeSample</string>
+
+  <string name="intent_start_activity">IntentStartActivity</string>
+  
+  <string name="app_name">DecodeIntent</string>
+  <string name="activity_result">Decoding by intents for Xamarin!\n\n</string>
+  <string name="title_activity_intent_start">IntentStartActivity</string>
+  <string name="radioActivity_string">Start Activity</string>
+  <string name="radioService_string">Start Service</string>
+  <string name="radioBroadcast_string">Broadcast Intent</string>
+  <string name="initial_hint">Select one of the three different IntentWedge delivery modes.\n\n Now press Start or Stop button.\n   Only intents will be used.</string>
+  <string name="startBTN">Start decode</string>
+  <string name="stopBTN">Stop decode</string>
+  
+</resources>
