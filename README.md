@@ -17,3 +17,8 @@ Currently, this only includes Battery, Location and NFC information.
 
 ## JoyaTouchCradleSampleAPI
 Configure and control the JoyaTouch cradle.
+
+## [XamarinFormsDatalogicSDKExample](https://github.com/ahmetkocadogan/XamarinFormsDatalogicSDKExample)
+Xamarin.Forms project that uses the Datalogic Xamarin SDK. External sample provided by [ahmetkocadogan](https://github.com/ahmetkocadogan).
+
+
