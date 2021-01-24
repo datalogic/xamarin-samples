@@ -63,10 +63,13 @@ namespace DeviceSampleAPI
 
         public string GetBatteryInfo()
         {
-            string output = "  capacity:" + SYSTEM.BatteryInfo.Capacity + "\n"
-                + "  year:" + SYSTEM.BatteryInfo.Year + "\n"
-                + "  week:" + SYSTEM.BatteryInfo.SerialNumber + "\n"
-                + "  serial_number:" + SYSTEM.BatteryInfo.Manufacturer + "\n";
+            Com.Datalogic.Device.Battery.BatteryStatus battery = new Com.Datalogic.Device.Battery.BatteryStatus();
+            Com.Datalogic.Device.Battery.DLBatteryManager batteryManager = Com.Datalogic.Device.Battery.DLBatteryManager.Instance;
+
+            string output = "  capacity:" + battery.BatteryStateOfHealth + "\n"
+                + "  year:" +  batteryManager.ManufacturerInfo.ProductionYear + "\n"
+                + "  week:" + batteryManager.ManufacturerInfo.ProductionWeek + "\n"
+                + "  serial_number:" + batteryManager.ManufacturerInfo.SerialNumber + "\n";
             return output;
         }
 

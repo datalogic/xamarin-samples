@@ -1,9 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="JoyaTouchCradleSampleAPI.JoyaTouchCradleSampleAPI" android:versionCode="1" android:versionName="1.0">
-	<uses-sdk android:minSdkVersion="16" />
-  <application
-    android:theme="@android:style/Theme.Holo.Light"
-    android:label="JoyaTouchCradleSampleAPI">
+	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="28" />
+	<application android:theme="@android:style/Theme.Holo.Light" android:label="JoyaTouchCradleSampleAPI">
 		<activity android:name="GetCradleStateActivity" android:label="@string/title_activity_get_cradle_state"></activity>
 		<activity android:name="ControlCradleLEDActivity" android:label="@string/title_activity_led"></activity>
 		<activity android:name="ControlCradleLockActivity" android:label="@string/title_activity_lock"></activity>

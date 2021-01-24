@@ -34,7 +34,7 @@ namespace JoyaTouchCradleSampleAPI
 
         public override Java.Lang.Object GetItem(int position)
         {
-            return values[position];
+            return (Java.Lang.Byte)(sbyte) (values.ElementAt(position));
         }
 
         public void SetItem(int position, byte val)

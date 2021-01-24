@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\datalogic-xamarin-sdk-selfshopping.1.1.8-beta\build\datalogic-xamarin-sdk-selfshopping.props" Condition="Exists('..\packages\datalogic-xamarin-sdk-selfshopping.1.1.8-beta\build\datalogic-xamarin-sdk-selfshopping.props')" />
+  <Import Project="..\packages\datalogic-xamarin-sdk-selfshopping.1.2.15\build\datalogic-xamarin-sdk-selfshopping.props" Condition="Exists('..\packages\datalogic-xamarin-sdk-selfshopping.1.2.15\build\datalogic-xamarin-sdk-selfshopping.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -16,8 +16,7 @@
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -49,8 +48,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="datalogic-xamarin-sdk-selfshopping, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\datalogic-xamarin-sdk-selfshopping.1.1.8-beta\lib\monoandroid70\datalogic-xamarin-sdk-selfshopping.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\datalogic-xamarin-sdk-selfshopping.1.2.15\lib\monoandroid70\datalogic-xamarin-sdk-selfshopping.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Mono.Android" />
@@ -129,7 +127,7 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\datalogic-xamarin-sdk-selfshopping.1.1.8-beta\build\datalogic-xamarin-sdk-selfshopping.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\datalogic-xamarin-sdk-selfshopping.1.1.8-beta\build\datalogic-xamarin-sdk-selfshopping.props'))" />
+    <Error Condition="!Exists('..\packages\datalogic-xamarin-sdk-selfshopping.1.2.15\build\datalogic-xamarin-sdk-selfshopping.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\datalogic-xamarin-sdk-selfshopping.1.2.15\build\datalogic-xamarin-sdk-selfshopping.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
