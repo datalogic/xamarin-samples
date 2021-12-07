@@ -50,7 +50,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="datalogic-xamarin-sdk, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\datalogic-xamarin-sdk.1.22.4648\lib\monoandroid90\datalogic-xamarin-sdk.dll</HintPath>
+      <HintPath>..\packages\datalogic-xamarin-sdk.1.29.8975\lib\monoandroid44\datalogic-xamarin-sdk.dll</HintPath>
     </Reference>
     <Reference Include="Java.Interop" />
     <Reference Include="System" />
